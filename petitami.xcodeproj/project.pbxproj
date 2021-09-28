@@ -1,0 +1,629 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C3270380EC004FA8AF /* AppDelegate.swift */; };
+		A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */; };
+		A3EA23C8270380EC004FA8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C7270380EC004FA8AF /* ViewController.swift */; };
+		A3EA23CB270380EC004FA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23C9270380EC004FA8AF /* Main.storyboard */; };
+		A3EA23CD270380F1004FA8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23CC270380F1004FA8AF /* Assets.xcassets */; };
+		A3EA23D0270380F1004FA8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23CE270380F1004FA8AF /* LaunchScreen.storyboard */; };
+		A3EA23DB270380F2004FA8AF /* petitamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23DA270380F2004FA8AF /* petitamiTests.swift */; };
+		A3EA23E5270380F2004FA8AF /* petitamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */; };
+		A3EA23E7270380F2004FA8AF /* petitamiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3EA23D7270380F2004FA8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3EA23B8270380EB004FA8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3EA23BF270380EB004FA8AF;
+			remoteInfo = petitami;
+		};
+		A3EA23E1270380F2004FA8AF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3EA23B8270380EB004FA8AF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3EA23BF270380EB004FA8AF;
+			remoteInfo = petitami;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A3EA23C0270380EC004FA8AF /* petitami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petitami.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EA23C3270380EC004FA8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3EA23C7270380EC004FA8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3EA23CA270380EC004FA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3EA23CC270380F1004FA8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3EA23CF270380F1004FA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3EA23D1270380F1004FA8AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3EA23D6270380F2004FA8AF /* petitamiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petitamiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EA23DA270380F2004FA8AF /* petitamiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiTests.swift; sourceTree = "<group>"; };
+		A3EA23E0270380F2004FA8AF /* petitamiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petitamiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiUITests.swift; sourceTree = "<group>"; };
+		A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3EA23BD270380EB004FA8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3EA23D3270380F2004FA8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3EA23DD270380F2004FA8AF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3EA23B7270380EB004FA8AF = {
+			isa = PBXGroup;
+			children = (
+				A3EA23C2270380EC004FA8AF /* petitami */,
+				A3EA23D9270380F2004FA8AF /* petitamiTests */,
+				A3EA23E3270380F2004FA8AF /* petitamiUITests */,
+				A3EA23C1270380EC004FA8AF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3EA23C1270380EC004FA8AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA23C0270380EC004FA8AF /* petitami.app */,
+				A3EA23D6270380F2004FA8AF /* petitamiTests.xctest */,
+				A3EA23E0270380F2004FA8AF /* petitamiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3EA23C2270380EC004FA8AF /* petitami */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA23C3270380EC004FA8AF /* AppDelegate.swift */,
+				A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */,
+				A3EA23C7270380EC004FA8AF /* ViewController.swift */,
+				A3EA23C9270380EC004FA8AF /* Main.storyboard */,
+				A3EA23CC270380F1004FA8AF /* Assets.xcassets */,
+				A3EA23CE270380F1004FA8AF /* LaunchScreen.storyboard */,
+				A3EA23D1270380F1004FA8AF /* Info.plist */,
+			);
+			path = petitami;
+			sourceTree = "<group>";
+		};
+		A3EA23D9270380F2004FA8AF /* petitamiTests */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA23DA270380F2004FA8AF /* petitamiTests.swift */,
+			);
+			path = petitamiTests;
+			sourceTree = "<group>";
+		};
+		A3EA23E3270380F2004FA8AF /* petitamiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */,
+				A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */,
+			);
+			path = petitamiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3EA23BF270380EB004FA8AF /* petitami */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3EA23EA270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitami" */;
+			buildPhases = (
+				A3EA23BC270380EB004FA8AF /* Sources */,
+				A3EA23BD270380EB004FA8AF /* Frameworks */,
+				A3EA23BE270380EB004FA8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = petitami;
+			productName = petitami;
+			productReference = A3EA23C0270380EC004FA8AF /* petitami.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3EA23D5270380F2004FA8AF /* petitamiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3EA23ED270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitamiTests" */;
+			buildPhases = (
+				A3EA23D2270380F2004FA8AF /* Sources */,
+				A3EA23D3270380F2004FA8AF /* Frameworks */,
+				A3EA23D4270380F2004FA8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3EA23D8270380F2004FA8AF /* PBXTargetDependency */,
+			);
+			name = petitamiTests;
+			productName = petitamiTests;
+			productReference = A3EA23D6270380F2004FA8AF /* petitamiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A3EA23DF270380F2004FA8AF /* petitamiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3EA23F0270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitamiUITests" */;
+			buildPhases = (
+				A3EA23DC270380F2004FA8AF /* Sources */,
+				A3EA23DD270380F2004FA8AF /* Frameworks */,
+				A3EA23DE270380F2004FA8AF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3EA23E2270380F2004FA8AF /* PBXTargetDependency */,
+			);
+			name = petitamiUITests;
+			productName = petitamiUITests;
+			productReference = A3EA23E0270380F2004FA8AF /* petitamiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3EA23B8270380EB004FA8AF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					A3EA23BF270380EB004FA8AF = {
+						CreatedOnToolsVersion = 13.0;
+					};
+					A3EA23D5270380F2004FA8AF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A3EA23BF270380EB004FA8AF;
+					};
+					A3EA23DF270380F2004FA8AF = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = A3EA23BF270380EB004FA8AF;
+					};
+				};
+			};
+			buildConfigurationList = A3EA23BB270380EB004FA8AF /* Build configuration list for PBXProject "petitami" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3EA23B7270380EB004FA8AF;
+			productRefGroup = A3EA23C1270380EC004FA8AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3EA23BF270380EB004FA8AF /* petitami */,
+				A3EA23D5270380F2004FA8AF /* petitamiTests */,
+				A3EA23DF270380F2004FA8AF /* petitamiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3EA23BE270380EB004FA8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA23D0270380F1004FA8AF /* LaunchScreen.storyboard in Resources */,
+				A3EA23CD270380F1004FA8AF /* Assets.xcassets in Resources */,
+				A3EA23CB270380EC004FA8AF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3EA23D4270380F2004FA8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3EA23DE270380F2004FA8AF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3EA23BC270380EB004FA8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA23C8270380EC004FA8AF /* ViewController.swift in Sources */,
+				A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */,
+				A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3EA23D2270380F2004FA8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA23DB270380F2004FA8AF /* petitamiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3EA23DC270380F2004FA8AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3EA23E7270380F2004FA8AF /* petitamiUITestsLaunchTests.swift in Sources */,
+				A3EA23E5270380F2004FA8AF /* petitamiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3EA23D8270380F2004FA8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3EA23BF270380EB004FA8AF /* petitami */;
+			targetProxy = A3EA23D7270380F2004FA8AF /* PBXContainerItemProxy */;
+		};
+		A3EA23E2270380F2004FA8AF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3EA23BF270380EB004FA8AF /* petitami */;
+			targetProxy = A3EA23E1270380F2004FA8AF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3EA23C9270380EC004FA8AF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3EA23CA270380EC004FA8AF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3EA23CE270380F1004FA8AF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3EA23CF270380F1004FA8AF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3EA23E8270380F2004FA8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3EA23E9270380F2004FA8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A3EA23EB270380F2004FA8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = petitami/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitami;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3EA23EC270380F2004FA8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = petitami/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitami;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A3EA23EE270380F2004FA8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitamiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/petitami.app/petitami";
+			};
+			name = Debug;
+		};
+		A3EA23EF270380F2004FA8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitamiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/petitami.app/petitami";
+			};
+			name = Release;
+		};
+		A3EA23F1270380F2004FA8AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitamiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = petitami;
+			};
+			name = Debug;
+		};
+		A3EA23F2270380F2004FA8AF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GM2YUUZ32A;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitamiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = petitami;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3EA23BB270380EB004FA8AF /* Build configuration list for PBXProject "petitami" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EA23E8270380F2004FA8AF /* Debug */,
+				A3EA23E9270380F2004FA8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3EA23EA270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitami" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EA23EB270380F2004FA8AF /* Debug */,
+				A3EA23EC270380F2004FA8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3EA23ED270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitamiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EA23EE270380F2004FA8AF /* Debug */,
+				A3EA23EF270380F2004FA8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3EA23F0270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitamiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3EA23F1270380F2004FA8AF /* Debug */,
+				A3EA23F2270380F2004FA8AF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3EA23B8270380EB004FA8AF /* Project object */;
+}
