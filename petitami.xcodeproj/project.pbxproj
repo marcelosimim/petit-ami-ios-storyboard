@@ -9,13 +9,13 @@
 /* Begin PBXBuildFile section */
 		A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C3270380EC004FA8AF /* AppDelegate.swift */; };
 		A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */; };
-		A3EA23C8270380EC004FA8AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C7270380EC004FA8AF /* ViewController.swift */; };
 		A3EA23CB270380EC004FA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23C9270380EC004FA8AF /* Main.storyboard */; };
 		A3EA23CD270380F1004FA8AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23CC270380F1004FA8AF /* Assets.xcassets */; };
 		A3EA23D0270380F1004FA8AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23CE270380F1004FA8AF /* LaunchScreen.storyboard */; };
 		A3EA23DB270380F2004FA8AF /* petitamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23DA270380F2004FA8AF /* petitamiTests.swift */; };
 		A3EA23E5270380F2004FA8AF /* petitamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */; };
 		A3EA23E7270380F2004FA8AF /* petitamiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */; };
+		A3EA23F62703817F004FA8AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23F52703817F004FA8AF /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +39,6 @@
 		A3EA23C0270380EC004FA8AF /* petitami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petitami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EA23C3270380EC004FA8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3EA23C7270380EC004FA8AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A3EA23CA270380EC004FA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3EA23CC270380F1004FA8AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3EA23CF270380F1004FA8AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +48,7 @@
 		A3EA23E0270380F2004FA8AF /* petitamiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = petitamiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiUITests.swift; sourceTree = "<group>"; };
 		A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A3EA23F52703817F004FA8AF /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,9 @@
 			children = (
 				A3EA23C3270380EC004FA8AF /* AppDelegate.swift */,
 				A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */,
-				A3EA23C7270380EC004FA8AF /* ViewController.swift */,
-				A3EA23C9270380EC004FA8AF /* Main.storyboard */,
+				A3EA23F327038129004FA8AF /* Controller */,
+				A3EA23F42703813D004FA8AF /* View */,
 				A3EA23CC270380F1004FA8AF /* Assets.xcassets */,
-				A3EA23CE270380F1004FA8AF /* LaunchScreen.storyboard */,
 				A3EA23D1270380F1004FA8AF /* Info.plist */,
 			);
 			path = petitami;
@@ -125,6 +124,23 @@
 				A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */,
 			);
 			path = petitamiUITests;
+			sourceTree = "<group>";
+		};
+		A3EA23F327038129004FA8AF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA23F52703817F004FA8AF /* InitialViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A3EA23F42703813D004FA8AF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A3EA23C9270380EC004FA8AF /* Main.storyboard */,
+				A3EA23CE270380F1004FA8AF /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3EA23C8270380EC004FA8AF /* ViewController.swift in Sources */,
+				A3EA23F62703817F004FA8AF /* InitialViewController.swift in Sources */,
 				A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */,
 				A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */,
 			);
