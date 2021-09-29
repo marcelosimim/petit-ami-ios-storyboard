@@ -8,6 +8,7 @@ target 'petitami' do
   # Pods for petitami
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
 
   target 'petitamiTests' do
     inherit! :search_paths
