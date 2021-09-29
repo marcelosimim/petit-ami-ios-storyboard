@@ -99,7 +99,7 @@ votre app française.</string>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="44" translatesAutoresizingMaskIntoConstraints="NO" id="9tR-tu-Ovv">
                                 <rect key="frame" x="107" y="354.5" width="200" height="187"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uFE-Yv-WCj">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="adm@adm.com" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="uFE-Yv-WCj">
                                         <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
                                         <color key="backgroundColor" name="TextField"/>
                                         <constraints>
@@ -107,9 +107,9 @@ votre app française.</string>
                                             <constraint firstAttribute="height" constant="34" id="r7h-Ze-1Ar"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-wl-lIc">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345678" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-wl-lIc">
                                         <rect key="frame" x="0.0" y="78" width="200" height="34"/>
                                         <color key="backgroundColor" name="TextField"/>
                                         <constraints>
@@ -117,7 +117,7 @@ votre app française.</string>
                                             <constraint firstAttribute="height" constant="34" id="SwY-49-m0X"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5VP-ci-LzX">
                                         <rect key="frame" x="68.5" y="156" width="63.5" height="31"/>
@@ -125,6 +125,9 @@ votre app française.</string>
                                         <buttonConfiguration key="configuration" style="filled" title="Entrar">
                                             <color key="baseBackgroundColor" name="Button"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="loginPressed:" destination="XlP-vj-XYE" eventType="touchUpInside" id="zbO-vV-5ET"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -137,6 +140,10 @@ votre app française.</string>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="zUO-Tt-fEJ"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="uFE-Yv-WCj" id="h2j-qI-AAT"/>
+                        <outlet property="passwordTextField" destination="8Lf-wl-lIc" id="zQd-rI-GJY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cVz-Ni-NKu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		76EF5DF01378F02327FFDE82 /* Pods_petitamiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D50397C91EA3BC39B5397FE /* Pods_petitamiTests.framework */; };
+		A143185DB253B393930D8BDF /* Pods_petitami_petitamiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E64A139693039B2CCDEA5D0 /* Pods_petitami_petitamiUITests.framework */; };
 		A35EC7662703D15F000D9B57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EC7652703D15F000D9B57 /* LoginViewController.swift */; };
+		A372DEEC2703DAE20063ED0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372DEEB2703DAE20063ED0D /* Constants.swift */; };
+		A3BE939F2703E16700A60A6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3BE939E2703E16700A60A6B /* GoogleService-Info.plist */; };
 		A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C3270380EC004FA8AF /* AppDelegate.swift */; };
 		A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */; };
 		A3EA23CB270380EC004FA8AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3EA23C9270380EC004FA8AF /* Main.storyboard */; };
@@ -17,6 +21,7 @@
 		A3EA23E5270380F2004FA8AF /* petitamiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */; };
 		A3EA23E7270380F2004FA8AF /* petitamiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */; };
 		A3EA23F62703817F004FA8AF /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3EA23F52703817F004FA8AF /* InitialViewController.swift */; };
+		E3191BC4600AD44D085FCF40 /* Pods_petitami.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D76DCA972ABC1C56EA68B202 /* Pods_petitami.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D50397C91EA3BC39B5397FE /* Pods_petitamiTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petitamiTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E64A139693039B2CCDEA5D0 /* Pods_petitami_petitamiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petitami_petitamiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73FEF7A7856236D5947F07DC /* Pods-petitami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitami.release.xcconfig"; path = "Target Support Files/Pods-petitami/Pods-petitami.release.xcconfig"; sourceTree = "<group>"; };
 		A35EC7652703D15F000D9B57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A372DEEB2703DAE20063ED0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A3BE939E2703E16700A60A6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3EA23C0270380EC004FA8AF /* petitami.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = petitami.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3EA23C3270380EC004FA8AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +61,12 @@
 		A3EA23E4270380F2004FA8AF /* petitamiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiUITests.swift; sourceTree = "<group>"; };
 		A3EA23E6270380F2004FA8AF /* petitamiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = petitamiUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A3EA23F52703817F004FA8AF /* InitialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		B2B7B04B77D38DC305174EB5 /* Pods-petitamiTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitamiTests.debug.xcconfig"; path = "Target Support Files/Pods-petitamiTests/Pods-petitamiTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B91688BB20578BD263FE98D3 /* Pods-petitami.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitami.debug.xcconfig"; path = "Target Support Files/Pods-petitami/Pods-petitami.debug.xcconfig"; sourceTree = "<group>"; };
+		D465EA56E5343675FBD02F9C /* Pods-petitami-petitamiUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitami-petitamiUITests.release.xcconfig"; path = "Target Support Files/Pods-petitami-petitamiUITests/Pods-petitami-petitamiUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D76DCA972ABC1C56EA68B202 /* Pods_petitami.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petitami.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9E1B4598CAFA1DD2EC7F0C5 /* Pods-petitami-petitamiUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitami-petitamiUITests.debug.xcconfig"; path = "Target Support Files/Pods-petitami-petitamiUITests/Pods-petitami-petitamiUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FF915141A14F6F199F50C96E /* Pods-petitamiTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitamiTests.release.xcconfig"; path = "Target Support Files/Pods-petitamiTests/Pods-petitamiTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E3191BC4600AD44D085FCF40 /* Pods_petitami.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76EF5DF01378F02327FFDE82 /* Pods_petitamiTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +90,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A143185DB253B393930D8BDF /* Pods_petitami_petitamiUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1CAF5BC58FB5143C579612B9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D76DCA972ABC1C56EA68B202 /* Pods_petitami.framework */,
+				3E64A139693039B2CCDEA5D0 /* Pods_petitami_petitamiUITests.framework */,
+				2D50397C91EA3BC39B5397FE /* Pods_petitamiTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A3A967CD2703D7110076F929 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A3EA23B7270380EB004FA8AF = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +121,8 @@
 				A3EA23D9270380F2004FA8AF /* petitamiTests */,
 				A3EA23E3270380F2004FA8AF /* petitamiUITests */,
 				A3EA23C1270380EC004FA8AF /* Products */,
+				ACF6E144406DA758150EC572 /* Pods */,
+				1CAF5BC58FB5143C579612B9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,12 +139,15 @@
 		A3EA23C2270380EC004FA8AF /* petitami */ = {
 			isa = PBXGroup;
 			children = (
+				A3A967CD2703D7110076F929 /* Model */,
+				A3EA23F42703813D004FA8AF /* View */,
+				A3EA23F327038129004FA8AF /* Controller */,
 				A3EA23C3270380EC004FA8AF /* AppDelegate.swift */,
 				A3EA23C5270380EC004FA8AF /* SceneDelegate.swift */,
-				A3EA23F327038129004FA8AF /* Controller */,
-				A3EA23F42703813D004FA8AF /* View */,
 				A3EA23CC270380F1004FA8AF /* Assets.xcassets */,
 				A3EA23D1270380F1004FA8AF /* Info.plist */,
+				A3BE939E2703E16700A60A6B /* GoogleService-Info.plist */,
+				A372DEEB2703DAE20063ED0D /* Constants.swift */,
 			);
 			path = petitami;
 			sourceTree = "<group>";
@@ -146,6 +187,19 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		ACF6E144406DA758150EC572 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B91688BB20578BD263FE98D3 /* Pods-petitami.debug.xcconfig */,
+				73FEF7A7856236D5947F07DC /* Pods-petitami.release.xcconfig */,
+				E9E1B4598CAFA1DD2EC7F0C5 /* Pods-petitami-petitamiUITests.debug.xcconfig */,
+				D465EA56E5343675FBD02F9C /* Pods-petitami-petitamiUITests.release.xcconfig */,
+				B2B7B04B77D38DC305174EB5 /* Pods-petitamiTests.debug.xcconfig */,
+				FF915141A14F6F199F50C96E /* Pods-petitamiTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EA23EA270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitami" */;
 			buildPhases = (
+				CB1EE1DB4480266B27C7BF8F /* [CP] Check Pods Manifest.lock */,
 				A3EA23BC270380EB004FA8AF /* Sources */,
 				A3EA23BD270380EB004FA8AF /* Frameworks */,
 				A3EA23BE270380EB004FA8AF /* Resources */,
+				E7844049FB122D77DB3B4966 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -170,6 +226,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EA23ED270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitamiTests" */;
 			buildPhases = (
+				396CFD90EEAA7BE3037661D0 /* [CP] Check Pods Manifest.lock */,
 				A3EA23D2270380F2004FA8AF /* Sources */,
 				A3EA23D3270380F2004FA8AF /* Frameworks */,
 				A3EA23D4270380F2004FA8AF /* Resources */,
@@ -188,9 +245,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3EA23F0270380F2004FA8AF /* Build configuration list for PBXNativeTarget "petitamiUITests" */;
 			buildPhases = (
+				BC47404D0F2E7A319282E2F0 /* [CP] Check Pods Manifest.lock */,
 				A3EA23DC270380F2004FA8AF /* Sources */,
 				A3EA23DD270380F2004FA8AF /* Frameworks */,
 				A3EA23DE270380F2004FA8AF /* Resources */,
+				F970542A4CC5F91B12084BEA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3EA23D0270380F1004FA8AF /* LaunchScreen.storyboard in Resources */,
+				A3BE939F2703E16700A60A6B /* GoogleService-Info.plist in Resources */,
 				A3EA23CD270380F1004FA8AF /* Assets.xcassets in Resources */,
 				A3EA23CB270380EC004FA8AF /* Main.storyboard in Resources */,
 			);
@@ -272,6 +332,109 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		396CFD90EEAA7BE3037661D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-petitamiTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC47404D0F2E7A319282E2F0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-petitami-petitamiUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB1EE1DB4480266B27C7BF8F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-petitami-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7844049FB122D77DB3B4966 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petitami/Pods-petitami-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petitami/Pods-petitami-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petitami/Pods-petitami-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F970542A4CC5F91B12084BEA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petitami-petitamiUITests/Pods-petitami-petitamiUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-petitami-petitamiUITests/Pods-petitami-petitamiUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-petitami-petitamiUITests/Pods-petitami-petitamiUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A3EA23BC270380EB004FA8AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -281,6 +444,7 @@
 				A3EA23F62703817F004FA8AF /* InitialViewController.swift in Sources */,
 				A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */,
 				A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */,
+				A372DEEC2703DAE20063ED0D /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +618,7 @@
 		};
 		A3EA23EB270380F2004FA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B91688BB20578BD263FE98D3 /* Pods-petitami.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -472,7 +637,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitami;
+				PRODUCT_BUNDLE_IDENTIFIER = br.simim.petitami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -482,6 +647,7 @@
 		};
 		A3EA23EC270380F2004FA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73FEF7A7856236D5947F07DC /* Pods-petitami.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -500,7 +666,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = br.com.simim.petitami;
+				PRODUCT_BUNDLE_IDENTIFIER = br.simim.petitami;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -510,6 +676,7 @@
 		};
 		A3EA23EE270380F2004FA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B2B7B04B77D38DC305174EB5 /* Pods-petitamiTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -535,6 +702,7 @@
 		};
 		A3EA23EF270380F2004FA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF915141A14F6F199F50C96E /* Pods-petitamiTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -560,6 +728,7 @@
 		};
 		A3EA23F1270380F2004FA8AF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9E1B4598CAFA1DD2EC7F0C5 /* Pods-petitami-petitamiUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -583,6 +752,7 @@
 		};
 		A3EA23F2270380F2004FA8AF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D465EA56E5343675FBD02F9C /* Pods-petitami-petitamiUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

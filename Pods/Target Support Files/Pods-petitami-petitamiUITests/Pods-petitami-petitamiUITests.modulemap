@@ -1,0 +1,6 @@
+framework module Pods_petitami_petitamiUITests {
+  umbrella header "Pods-petitami-petitamiUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
