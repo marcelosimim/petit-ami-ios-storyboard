@@ -12,6 +12,7 @@
 		A342E85C27040DF300336D45 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E85B27040DF300336D45 /* RegisterViewController.swift */; };
 		A342E8622704996500336D45 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E8612704996500336D45 /* Validation.swift */; };
 		A342E8642704A0AA00336D45 /* FirebaseInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E8632704A0AA00336D45 /* FirebaseInfo.swift */; };
+		A342E8662704A29700336D45 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E8652704A29700336D45 /* HomeViewController.swift */; };
 		A35EC7662703D15F000D9B57 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EC7652703D15F000D9B57 /* LoginViewController.swift */; };
 		A372DEEC2703DAE20063ED0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A372DEEB2703DAE20063ED0D /* Constants.swift */; };
 		A3BE939F2703E16700A60A6B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3BE939E2703E16700A60A6B /* GoogleService-Info.plist */; };
@@ -51,6 +52,7 @@
 		A342E85B27040DF300336D45 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A342E8612704996500336D45 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A342E8632704A0AA00336D45 /* FirebaseInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseInfo.swift; sourceTree = "<group>"; };
+		A342E8652704A29700336D45 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A35EC7652703D15F000D9B57 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A372DEEB2703DAE20063ED0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A3BE939E2703E16700A60A6B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -183,6 +185,7 @@
 				A3EA23F52703817F004FA8AF /* InitialViewController.swift */,
 				A35EC7652703D15F000D9B57 /* LoginViewController.swift */,
 				A342E85B27040DF300336D45 /* RegisterViewController.swift */,
+				A342E8652704A29700336D45 /* HomeViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				A3EA23F62703817F004FA8AF /* InitialViewController.swift in Sources */,
 				A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */,
 				A342E85C27040DF300336D45 /* RegisterViewController.swift in Sources */,
+				A342E8662704A29700336D45 /* HomeViewController.swift in Sources */,
 				A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */,
 				A342E8622704996500336D45 /* Validation.swift in Sources */,
 				A372DEEC2703DAE20063ED0D /* Constants.swift in Sources */,

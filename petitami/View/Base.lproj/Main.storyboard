@@ -212,10 +212,10 @@ votre app française.</string>
             </objects>
             <point key="canvasLocation" x="1739.1304347826087" y="-323.4375"/>
         </scene>
-        <!--View Controller-->
+        <!--Home View Controller-->
         <scene sceneID="YSm-l4-4Ds">
             <objects>
-                <viewController id="sCl-fC-bii" sceneMemberID="viewController">
+                <viewController id="sCl-fC-bii" customClass="HomeViewController" customModule="petitami" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Af-0a-aP9">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
