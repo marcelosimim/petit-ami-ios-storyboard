@@ -7,11 +7,11 @@
 
 import Foundation
 import Firebase
-import FirebaseFirestore
+import FirebaseStorage
 
-struct FirebaseCollection {
+struct FirebaseRef {
     static let userRef = Firestore.firestore().collection("users")
-    //let coverRef = Storage.storage().reference(withPath: "cover/capa1.png")
+    static let coverRef = Storage.storage().reference(withPath: "cover/capa1.png")
             /*coverRef.getData(maxSize: 4 * 1024 * 1024) { data, error in
                 if let e = error {
                     print(e)

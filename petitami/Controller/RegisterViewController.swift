@@ -31,7 +31,7 @@ class RegisterViewController: UIViewController {
                     if let e = error {
                         self.alert(title: "Error", message: e.localizedDescription)
                     }else{
-                        FirebaseCollection.userRef.document((authResult?.user.uid)!).setData([K.firebaseName: name,
+                        FirebaseRef.userRef.document((authResult?.user.uid)!).setData([K.firebaseName: name,
                                                                                               K.firebaseEmail: email,
                                                                                               K.firebaseUnity: 1,
                                                                                               K.firebaseExercise:1]) { error in
