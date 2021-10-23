@@ -172,7 +172,7 @@ votre app française.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="12345678" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-wl-lIc">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="8Lf-wl-lIc">
                                         <rect key="frame" x="0.0" y="78" width="200" height="34"/>
                                         <color key="backgroundColor" name="TextField"/>
                                         <constraints>
@@ -230,7 +230,7 @@ votre app française.</string>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="9v3-hq-rKq">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="634"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu progresso" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-bI-2EE">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu progresso" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ees-bI-2EE">
                                                         <rect key="frame" x="129.5" y="0.0" width="155" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <nil key="textColor"/>
@@ -245,7 +245,7 @@ votre app française.</string>
                                                         <color key="progressTintColor" name="AccentColor"/>
                                                         <color key="trackTintColor" systemColor="systemRedColor"/>
                                                     </progressView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue estudando" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-SU-5K1">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue estudando" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-SU-5K1">
                                                         <rect key="frame" x="98" y="134" width="218.5" height="30"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                                         <nil key="textColor"/>
@@ -305,11 +305,27 @@ votre app française.</string>
                     <connections>
                         <outlet property="activityIndicator" destination="r3c-dZ-ccc" id="s9p-9h-HT8"/>
                         <outlet property="coverImageView" destination="26e-UB-Yr7" id="qk1-js-r7s"/>
+                        <outlet property="progressView" destination="JWR-SC-fHU" id="jVp-H8-xpH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCX-V0-Rjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2730.434782608696" y="27.455357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5RM-7w-INd">
+            <objects>
+                <viewController id="pvt-lW-NHr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ing-NN-hks">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Lkx-WM-kNT"/>
+                        <color key="backgroundColor" name="Background"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MVj-1X-GZr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3804" y="27"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="GUa-bm-354">
@@ -331,7 +347,7 @@ votre app française.</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="oXz-yU-FZa"/>
+        <segue reference="QTq-qI-4EW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>

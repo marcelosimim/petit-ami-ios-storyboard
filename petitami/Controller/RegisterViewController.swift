@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import CoreData
+import Firebase
 import FirebaseAuth
 
 class RegisterViewController: UIViewController {
@@ -31,7 +33,7 @@ class RegisterViewController: UIViewController {
                     if let e = error {
                         self.alert(title: "Error", message: e.localizedDescription)
                     }else{
-                        FirebaseRef.userRef.document((authResult?.user.uid)!).setData([K.firebaseName: name,
+                        Firestore.firestore().collection("users").document((authResult?.user.uid)!).setData([K.firebaseName: name,
                                                                                               K.firebaseEmail: email,
                                                                                               K.firebaseUnity: 1,
                                                                                               K.firebaseExercise:1]) { error in
@@ -39,6 +41,7 @@ class RegisterViewController: UIViewController {
                             if let error = error {
                                 self.alert(title: "Error", message: error.localizedDescription)
                             }else{
+                                self.saveUser(id: authResult?.user.uid as! String, name: name)
                                 self.performSegue(withIdentifier: K.registerSegue, sender: self)
                             }
                         }
@@ -60,5 +63,26 @@ class RegisterViewController: UIViewController {
         let ok:UIAlertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alertController.addAction(ok)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    //MARK: - CoreData Methods
+    
+    func saveUser(id:String, name:String){
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let newUser = User(context: context)
+        newUser.uid = id
+        newUser.name = name
+        newUser.exercise = 1
+        newUser.unit = 1
+        newUser.frenchLevel = "Iniciante"
+        newUser.progress = 0
+        
+        do{
+            try context.save()
+        }catch{
+            let nserror = error as NSError
+            alert(title: "Error", message: nserror.localizedDescription)
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
     }
 }
