@@ -10,6 +10,7 @@
 		76EF5DF01378F02327FFDE82 /* Pods_petitamiTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D50397C91EA3BC39B5397FE /* Pods_petitamiTests.framework */; };
 		A143185DB253B393930D8BDF /* Pods_petitami_petitamiUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E64A139693039B2CCDEA5D0 /* Pods_petitami_petitamiUITests.framework */; };
 		A30A41982723234A002C06D7 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A30A41962723234A002C06D7 /* DataModel.xcdatamodeld */; };
+		A33EC29A2724548F005F53AC /* ListenExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33EC2992724548F005F53AC /* ListenExerciseViewController.swift */; };
 		A342E85C27040DF300336D45 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E85B27040DF300336D45 /* RegisterViewController.swift */; };
 		A342E8622704996500336D45 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E8612704996500336D45 /* Validation.swift */; };
 		A342E8642704A0AA00336D45 /* Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = A342E8632704A0AA00336D45 /* Material.swift */; };
@@ -52,6 +53,7 @@
 		3E64A139693039B2CCDEA5D0 /* Pods_petitami_petitamiUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_petitami_petitamiUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		73FEF7A7856236D5947F07DC /* Pods-petitami.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-petitami.release.xcconfig"; path = "Target Support Files/Pods-petitami/Pods-petitami.release.xcconfig"; sourceTree = "<group>"; };
 		A30A41972723234A002C06D7 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		A33EC2992724548F005F53AC /* ListenExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListenExerciseViewController.swift; sourceTree = "<group>"; };
 		A342E85B27040DF300336D45 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		A342E8612704996500336D45 /* Validation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		A342E8632704A0AA00336D45 /* Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Material.swift; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 				A35EC7652703D15F000D9B57 /* LoginViewController.swift */,
 				A342E85B27040DF300336D45 /* RegisterViewController.swift */,
 				A342E8652704A29700336D45 /* HomeViewController.swift */,
+				A33EC2992724548F005F53AC /* ListenExerciseViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				A3EA23C4270380EC004FA8AF /* AppDelegate.swift in Sources */,
 				A342E85C27040DF300336D45 /* RegisterViewController.swift in Sources */,
 				A342E8662704A29700336D45 /* HomeViewController.swift in Sources */,
+				A33EC29A2724548F005F53AC /* ListenExerciseViewController.swift in Sources */,
 				A3EA23C6270380EC004FA8AF /* SceneDelegate.swift in Sources */,
 				A342E8622704996500336D45 /* Validation.swift in Sources */,
 				A3C40C4B270E0FB600920130 /* User.swift in Sources */,

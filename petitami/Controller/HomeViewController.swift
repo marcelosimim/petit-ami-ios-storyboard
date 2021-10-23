@@ -33,7 +33,6 @@ class HomeViewController: UIViewController {
     func updateUI(){
         navigationItem.hidesBackButton = true
         
-        //cover
         Material.coverImage(unit: 1).getData(maxSize: 4 * 1024 * 1024) { data, error in
             if let e = error {
                 print(e)
@@ -46,13 +45,6 @@ class HomeViewController: UIViewController {
             }
         }
         progressView.progress = Float(getUserProgress())
-    }
-    
-    @objc func imageTapped(gesture: UIGestureRecognizer) {
-            if (gesture.view as? UIImageView) != nil {
-                print("Image Tapped")
-                //Here you can initiate your new ViewController
-            }
     }
     
     @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
@@ -77,12 +69,21 @@ class HomeViewController: UIViewController {
             let currentUser = try context.fetch(request)
            progress = currentUser[0].progress
         }catch{
-            print("ERRO DO REQUEST???? OXE")
             print("Error fetching data from context: \(error)")
         }
         
         //print(Auth.auth().currentUser?.uid)
         return progress ?? 0.0
     }
+    
+    //MARK: - Navigation
+    
+    @objc func imageTapped(gesture: UIGestureRecognizer) {
+            if (gesture.view as? UIImageView) != nil {
+                print("Image Tapped")
+                performSegue(withIdentifier: "goToListen", sender: self)
+            }
+    }
+    
 }
 
