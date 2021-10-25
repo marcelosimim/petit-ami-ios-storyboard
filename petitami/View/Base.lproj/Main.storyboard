@@ -338,13 +338,25 @@ votre app française.</string>
                                     <action selector="buttonPressed:" destination="pvt-lW-NHr" eventType="touchUpInside" id="0kv-fE-CAi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vcq-wW-4ax">
+                                <rect key="frame" x="333" y="410" width="41" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" image="mic.fill" catalog="system">
+                                    <color key="baseBackgroundColor" systemColor="systemRedColor"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="recordPressed:" destination="pvt-lW-NHr" eventType="touchUpInside" id="rb0-mt-giT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Lkx-WM-kNT"/>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="2Hy-qE-ZfA" firstAttribute="centerX" secondItem="ing-NN-hks" secondAttribute="centerX" id="5ZO-Rj-gur"/>
                             <constraint firstItem="NNk-k9-oIX" firstAttribute="top" secondItem="Lkx-WM-kNT" secondAttribute="top" constant="40" id="BFd-9m-g2m"/>
+                            <constraint firstItem="Vcq-wW-4ax" firstAttribute="top" secondItem="NNk-k9-oIX" secondAttribute="bottom" constant="42" id="C2N-dH-Fud"/>
                             <constraint firstItem="2Hy-qE-ZfA" firstAttribute="top" secondItem="NNk-k9-oIX" secondAttribute="bottom" constant="42" id="L82-Np-M68"/>
+                            <constraint firstItem="Vcq-wW-4ax" firstAttribute="leading" secondItem="2Hy-qE-ZfA" secondAttribute="trailing" constant="81.5" id="VVK-fL-Rq7"/>
                             <constraint firstItem="NNk-k9-oIX" firstAttribute="centerX" secondItem="ing-NN-hks" secondAttribute="centerX" id="rXC-OW-IKi"/>
                         </constraints>
                     </view>
@@ -380,18 +392,19 @@ votre app française.</string>
         <segue reference="QTq-qI-4EW"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="mic.fill" catalog="system" width="108" height="128"/>
         <image name="rectangle.portrait.and.arrow.right.fill" catalog="system" width="128" height="108"/>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Background">
-            <color red="0.14200000464916229" green="0.25999999046325684" blue="0.27700001001358032" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.96899998188018799" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Button">
             <color red="0.31000000238418579" green="0.62699997425079346" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TextField">
-            <color red="0.31000000238418579" green="0.62699997425079346" blue="0.6119999885559082" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.29399999976158142" green="0.75" blue="0.97399997711181641" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

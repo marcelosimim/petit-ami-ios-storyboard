@@ -10,15 +10,23 @@ import CoreData
 import AVFoundation
 import FirebaseAuth
 import FirebaseStorage
+import InstantSearchVoiceOverlay
 
-class ListenExerciseViewController: UIViewController {
+class ListenExerciseViewController: UIViewController{
 
     @IBOutlet weak var exerciseImageView: UIImageView!
     var player: AVPlayer?
+    let voiceOverlayController: VoiceOverlayController = {
+      let recordableHandler = {
+        return SpeechController(locale: Locale(identifier: "fr_FR"))
+      }
+      return VoiceOverlayController(speechControllerHandler: recordableHandler)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
+        voiceOverlaySettings()
     }
     
     func updateUI(){
@@ -96,6 +104,30 @@ class ListenExerciseViewController: UIViewController {
                 self.player = AVPlayer.init(playerItem: playerItem)
                 self.player!.play()
             }
+        }
+    }
+    
+    //MARK: - Recording Methods
+    
+    func voiceOverlaySettings(){
+        voiceOverlayController.settings.layout.inputScreen.subtitleInitial = ""
+        voiceOverlayController.settings.layout.inputScreen.subtitleBullet = ""
+        voiceOverlayController.settings.layout.inputScreen.subtitleBulletList = []
+        voiceOverlayController.settings.layout.inputScreen.titleInProgress = "Je suis un étudiant"
+        voiceOverlayController.settings.layout.inputScreen.titleListening = "Je suis un étudiant"
+    }
+    
+    @IBAction func recordPressed(_ sender: UIButton) {
+        voiceOverlayController.start(on: self) { text, finalText, _ in
+            if finalText{
+                print("Final text: \(text)")
+            }else{
+                print("In progress: \(text)")
+            }
+        } errorHandler: { error in
+            
+        } resultScreenHandler: { result in
+            
         }
     }
 }

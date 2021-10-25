@@ -10,6 +10,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
+pod 'InstantSearchVoiceOverlay'
 
   target 'petitamiTests' do
     inherit! :search_paths
