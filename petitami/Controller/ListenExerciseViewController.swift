@@ -23,40 +23,21 @@ class ListenExerciseViewController: UIViewController{
       return VoiceOverlayController(speechControllerHandler: recordableHandler)
     }()
     var correctAnswer = ""
+    var currentExercise = 0
+    var currentUnit = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        updateUI()
-        
-        Material.exerciseCollection(unit: 1, exercise: 1).getDocument { document, error in
-            if let document = document, document.exists {
-                self.correctAnswer = document["check"] as! String
-                self.voiceOverlaySettings()
-               } else {
-                   print("Document does not exist")
-               }
-        }
+        getCurrentExercise()
+        getCurrentUnit()
     }
     
     //MARK: - UI Methods
     
     func updateUI(){
-        let currentExercise = getCurrentExercise()
-        let currentUnit = getCurrentUnit()
-        
+        getExerciseImage(currentUnit, currentExercise)
         navigationItem.title = "Unidade \(currentUnit) - Exercício \(currentExercise)"
-        
-        Material.exerciseImage(unit: currentUnit, exercise: currentExercise).getData(maxSize: 4 * 1024 * 1024) { data, error in
-            if let e = error {
-                print(e)
-                self.exerciseImageView.image = UIImage(named: "attention")
-//                self.activityIndicator.stopAnimating()
-            }
-            if let d = data{
-                self.exerciseImageView.image = UIImage(data: d)
-//                self.activityIndicator.stopAnimating()
-            }
-        }
+        voiceOverlaySettings()
     }
     
     func alert(title:String, message:String){
@@ -64,44 +45,6 @@ class ListenExerciseViewController: UIViewController{
         let ok:UIAlertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         alertController.addAction(ok)
         self.present(alertController, animated: true, completion: nil)
-    }
-    
-    //MARK: - CoreData Methods
-    
-    func getCurrentExercise()->Int{
-        var exercise:Int32?
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let request : NSFetchRequest<User> = User.fetchRequest()
-        let predicate = NSPredicate(format: "uid MATCHES %@", Auth.auth().currentUser?.uid ?? "")
-        request.predicate = predicate
-        
-        do {
-            let currentUser = try context.fetch(request)
-           exercise = currentUser[0].exercise
-        }catch{
-            print("Error fetching data from context: \(error)")
-        }
-        
-        //print(Auth.auth().currentUser?.uid)
-        return Int(exercise ?? 0)
-    }
-    
-    func getCurrentUnit()->Int{
-        var unit:Int32?
-        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
-        let request : NSFetchRequest<User> = User.fetchRequest()
-        let predicate = NSPredicate(format: "uid MATCHES %@", Auth.auth().currentUser?.uid ?? "")
-        request.predicate = predicate
-        
-        do {
-            let currentUser = try context.fetch(request)
-           unit = currentUser[0].unit
-        }catch{
-            print("Error fetching data from context: \(error)")
-        }
-        
-        //print(Auth.auth().currentUser?.uid)
-        return Int(unit ?? 0)
     }
     
     //MARK: - Audio Methods
@@ -155,6 +98,110 @@ class ListenExerciseViewController: UIViewController{
             
         } resultScreenHandler: { result in
             
+        }
+    }
+    
+    //MARK: - CoreData Methods
+    
+//    func getCurrentExercise()->Int{
+//        var exercise:Int32?
+//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//        let request : NSFetchRequest<User> = User.fetchRequest()
+//        let predicate = NSPredicate(format: "uid MATCHES %@", Auth.auth().currentUser?.uid ?? "")
+//        request.predicate = predicate
+//
+//        do {
+//            let currentUser = try context.fetch(request)
+//           exercise = currentUser[0].exercise
+//        }catch{
+//            print("Error fetching data from context: \(error)")
+//        }
+//
+//        //print(Auth.auth().currentUser?.uid)
+//        return Int(exercise ?? 0)
+//    }
+//
+//    func getCurrentUnit()->Int{
+//        var unit:Int32?
+//        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+//        let request : NSFetchRequest<User> = User.fetchRequest()
+//        let predicate = NSPredicate(format: "uid MATCHES %@", Auth.auth().currentUser?.uid ?? "")
+//        request.predicate = predicate
+//
+//        do {
+//            let currentUser = try context.fetch(request)
+//           unit = currentUser[0].unit
+//        }catch{
+//            print("Error fetching data from context: \(error)")
+//        }
+//
+//        //print(Auth.auth().currentUser?.uid)
+//        return Int(unit ?? 0)
+//    }
+    
+    //MARK: - Firebase Methods
+    
+    func getCurrentExercise(){
+        if let uid = Auth.auth().currentUser?.uid{
+            FirebaseData.userCollection(uid: uid).getDocument { document, error in
+                if let document = document, document.exists {
+                    self.currentExercise = document["current_exercise"] as! Int
+                   } else {
+                       print("Document does not exist")
+                   }
+            }
+        }
+    }
+    
+    func getCurrentUnit(){
+        if let uid = Auth.auth().currentUser?.uid{
+            FirebaseData.userCollection(uid: uid).getDocument { document, error in
+                if let document = document, document.exists {
+                    self.currentUnit = document["current_unity"] as! Int
+                    self.getCorrectAnswer(self.currentUnit, self.currentExercise)
+                   } else {
+                       print("Document does not exist")
+                   }
+            }
+        }
+    }
+    
+    func getExerciseImage(_ currentUnit:Int, _ currentExercise:Int){
+        FirebaseData.exerciseImage(unit: currentUnit, exercise: currentExercise).getData(maxSize: 4 * 1024 * 1024) { data, error in
+            if let e = error {
+                print(e)
+                self.exerciseImageView.image = UIImage(named: "attention")
+//                self.activityIndicator.stopAnimating()
+            }
+            if let d = data{
+                self.exerciseImageView.image = UIImage(data: d)
+//                self.activityIndicator.stopAnimating()
+            }
+        }
+    }
+    
+    func getCorrectAnswer(_ currentUnit:Int, _ currentExercise:Int){
+        FirebaseData.exerciseCollection(unit: currentUnit, exercise: currentExercise).getDocument { document, error in
+            if let document = document, document.exists {
+                self.correctAnswer =  document["check"] as! String
+                self.updateUI()
+               } else {
+                   print("Document does not exist")
+               }
+        }
+    }
+    
+    func goToNextExercise(){
+        FirebaseData.exerciseCollection(unit: currentUnit, exercise: currentExercise+1).getDocument { document, error in
+            if let document = document, document.exists {
+                if document["answer"] as! Bool{
+                    self.performSegue(withIdentifier: K.listenAndRepeatSegue, sender: self)
+                }else{
+                    //navegar para exercicio de escrita
+                }
+               } else {
+                   print("Document does not exist")
+               }
         }
     }
 }

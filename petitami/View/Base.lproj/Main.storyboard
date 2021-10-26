@@ -306,12 +306,29 @@ votre app française.</string>
                         <outlet property="activityIndicator" destination="r3c-dZ-ccc" id="s9p-9h-HT8"/>
                         <outlet property="coverImageView" destination="26e-UB-Yr7" id="qk1-js-r7s"/>
                         <outlet property="progressView" destination="JWR-SC-fHU" id="jVp-H8-xpH"/>
-                        <segue destination="pvt-lW-NHr" kind="show" identifier="goToListen" id="7WQ-L6-V4d"/>
+                        <segue destination="pvt-lW-NHr" kind="show" identifier="goToListenAndRepeat" id="7WQ-L6-V4d"/>
+                        <segue destination="ihj-Y2-BZS" kind="show" identifier="goToAnswer" id="RHx-wZ-dSR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lCX-V0-Rjc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2730.434782608696" y="27.455357142857142"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="L9e-0e-k5A">
+            <objects>
+                <viewController id="ihj-Y2-BZS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t9U-DA-aDE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Rps-D2-uPC"/>
+                        <color key="backgroundColor" name="Background"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="S7q-Rf-s75"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsi-IQ-3iA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3803" y="-686"/>
         </scene>
         <!--Listen Exercise View Controller-->
         <scene sceneID="5RM-7w-INd">

@@ -33,7 +33,7 @@ class HomeViewController: UIViewController {
     func updateUI(){
         navigationItem.hidesBackButton = true
         
-        Material.coverImage(unit: 1).getData(maxSize: 4 * 1024 * 1024) { data, error in
+        FirebaseData.coverImage(unit: 1).getData(maxSize: 4 * 1024 * 1024) { data, error in
             if let e = error {
                 print(e)
                 self.coverImageView.image = UIImage(named: "attention")
@@ -81,7 +81,7 @@ class HomeViewController: UIViewController {
     @objc func imageTapped(gesture: UIGestureRecognizer) {
             if (gesture.view as? UIImageView) != nil {
                 print("Image Tapped")
-                performSegue(withIdentifier: "goToListen", sender: self)
+                performSegue(withIdentifier: K.listenAndRepeatSegue, sender: self)
             }
     }
     

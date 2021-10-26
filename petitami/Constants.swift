@@ -12,6 +12,7 @@ struct K {
     static let registerSegue = "RegisterToHome"
     static let loginSegue = "LoginToHome"
     static let exerciseSegue = "HomeToExercise"
+    static let listenAndRepeatSegue = "goToListenAndRepeat"
     
     //MARK: - Firebase
     static let firebaseName = "name"

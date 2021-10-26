@@ -9,16 +9,25 @@ import Foundation
 import Firebase
 import FirebaseStorage
 
-struct Material {
+struct FirebaseData {
+    
+    //MARK: - Images
+    
     static func coverImage(unit number:Int)->StorageReference{
-        return Storage.storage().reference(withPath: "cover/capa1.png")
+        return Storage.storage().reference(withPath: "cover/capa\(number).png")
     }
     
     static func exerciseImage(unit number:Int, exercise:Int)->StorageReference{
         return Storage.storage().reference(withPath: "exercises/unit\(number)/images/\(exercise).png")
     }
     
+    //MARK: - Collections
+    
     static func exerciseCollection(unit number:Int, exercise:Int)->DocumentReference{
         return Firestore.firestore().collection("unit\(number)").document("e\(exercise)")
+    }
+    
+    static func userCollection(uid:String)->DocumentReference{
+        return Firestore.firestore().collection("users").document(uid)
     }
 }
