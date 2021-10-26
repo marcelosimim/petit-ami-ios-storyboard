@@ -17,4 +17,8 @@ struct Material {
     static func exerciseImage(unit number:Int, exercise:Int)->StorageReference{
         return Storage.storage().reference(withPath: "exercises/unit\(number)/images/\(exercise).png")
     }
+    
+    static func exerciseCollection(unit number:Int, exercise:Int)->DocumentReference{
+        return Firestore.firestore().collection("unit\(number)").document("e\(exercise)")
+    }
 }

@@ -22,12 +22,23 @@ class ListenExerciseViewController: UIViewController{
       }
       return VoiceOverlayController(speechControllerHandler: recordableHandler)
     }()
+    var correctAnswer = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         updateUI()
-        voiceOverlaySettings()
+        
+        Material.exerciseCollection(unit: 1, exercise: 1).getDocument { document, error in
+            if let document = document, document.exists {
+                self.correctAnswer = document["check"] as! String
+                self.voiceOverlaySettings()
+               } else {
+                   print("Document does not exist")
+               }
+        }
     }
+    
+    //MARK: - UI Methods
     
     func updateUI(){
         let currentExercise = getCurrentExercise()
@@ -46,6 +57,13 @@ class ListenExerciseViewController: UIViewController{
 //                self.activityIndicator.stopAnimating()
             }
         }
+    }
+    
+    func alert(title:String, message:String){
+        let alertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let ok:UIAlertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        alertController.addAction(ok)
+        self.present(alertController, animated: true, completion: nil)
     }
     
     //MARK: - CoreData Methods
@@ -113,14 +131,23 @@ class ListenExerciseViewController: UIViewController{
         voiceOverlayController.settings.layout.inputScreen.subtitleInitial = ""
         voiceOverlayController.settings.layout.inputScreen.subtitleBullet = ""
         voiceOverlayController.settings.layout.inputScreen.subtitleBulletList = []
-        voiceOverlayController.settings.layout.inputScreen.titleInProgress = "Je suis un étudiant"
-        voiceOverlayController.settings.layout.inputScreen.titleListening = "Je suis un étudiant"
+        voiceOverlayController.settings.layout.inputScreen.titleInProgress = correctAnswer
+        voiceOverlayController.settings.layout.inputScreen.titleListening = correctAnswer
     }
     
     @IBAction func recordPressed(_ sender: UIButton) {
         voiceOverlayController.start(on: self) { text, finalText, _ in
             if finalText{
                 print("Final text: \(text)")
+                if self.correctAnswer.lowercased() == text.lowercased(){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        self.alert(title:"Sucesso", message:"Você conseguiu!")
+                    }
+                }else{
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                        self.alert(title:"Fail...", message:"Tente novamente!")
+                    }
+                }
             }else{
                 print("In progress: \(text)")
             }
